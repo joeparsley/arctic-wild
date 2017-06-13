@@ -1,7 +1,7 @@
 @import 'scss/vendors/bourbon/bourbon';
 @import 'scss/vendors/neat/neat';
 
-// @import 'scss/abstracts/variables';
+@import 'scss/abstracts/variables';
 // @import 'scss/abstracts/functions';
 // @import 'scss/abstracts/mixins';
 // @import 'scss/abstracts/placeholders';
@@ -11,7 +11,7 @@
 //
 // @import 'scss/layout/navigation';
 @import 'scss/layout/header';
-// @import 'scss/layout/footer';
+@import 'scss/layout/gallery';
 
 @import 'scss/components/nav-bar';
 @import 'scss/components/hero-text';

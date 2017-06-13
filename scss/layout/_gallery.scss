@@ -1,0 +1,82 @@
+%mobile-gallery-image {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: 250px;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 5vw;
+  .trip-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, .5);
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    img {
+      height: 30px;
+      align-self: center;
+    }
+  }
+  .text-separator {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: flex-start;
+
+    span {
+      display: inline-block;
+      width: 40px;
+      height: 5px;
+      background-color: #DC7725;
+    }
+
+  }
+  h2 {
+    font-size: 21px;
+    color: white;
+    text-shadow: 0 0 1px black;
+    text-transform: uppercase;
+    font-family: $second-title;
+  }
+}
+
+
+.trip-text {
+  position: absolute;
+  left: 40px;
+  bottom: 45px;
+}
+.gallery {
+  // @include size(100% );
+  overflow-y: auto;
+  background-color: $gallery-bg-color;
+  padding: 5vw;
+  .picture-1 {
+    @extend %mobile-gallery-image;
+    background-image: url("../img/home-raft.jpg");
+  }
+  .picture-2 {
+    @extend %mobile-gallery-image;
+    background-image: url("../img/home-basecamp.jpg");
+  }
+  .picture-3 {
+    @extend %mobile-gallery-image;
+    background-image: url("../img/home-backpacking.jpg");
+  }
+  .picture-4 {
+    @extend %mobile-gallery-image;
+    background-image: url("../img/home-canoe.jpg");
+  }
+  .picture-5 {
+    @extend %mobile-gallery-image;
+    background-image: url("../img/home-photo.jpg");
+  }
+  .picture-6 {
+    @extend %mobile-gallery-image;
+    background-image: url("../img/home-custom.jpg");
+    margin-bottom: 0;
+  }
+}
