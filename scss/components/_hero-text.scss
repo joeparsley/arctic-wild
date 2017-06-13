@@ -1,0 +1,53 @@
+.hero-text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-basis: auto;
+  align-content: center;
+  color: white;
+  font-family: $second-title;
+  > img:first-child {
+    width: 80px;
+    align-self: center;
+  }
+  h2 {
+    // text-align: center;
+    align-self: center;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 4px;
+  }
+  .wordmark {
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+    justify-content: center;
+    padding-top: 10px;
+    img {
+      height: 35px;
+    }
+  }
+
+  .divider{
+
+  }
+
+
+  .play-btn {
+    // border: 2px solid red;
+    @include size(100px 100px);
+    border-radius: 50%;
+    background-color: rgba(256, 256, 256, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    img {
+      margin-left: 15px;
+      @include size(33.3px 40px);
+    }
+
+  }
+}

@@ -1,0 +1,17 @@
+@import 'scss/vendors/bourbon/bourbon';
+@import 'scss/vendors/neat/neat';
+
+// @import 'scss/abstracts/variables';
+// @import 'scss/abstracts/functions';
+// @import 'scss/abstracts/mixins';
+// @import 'scss/abstracts/placeholders';
+//
+@import 'scss/base/reset';
+@import 'scss/base/typography';
+//
+// @import 'scss/layout/navigation';
+@import 'scss/layout/header';
+// @import 'scss/layout/footer';
+
+@import 'scss/components/nav-bar';
+@import 'scss/components/hero-text';

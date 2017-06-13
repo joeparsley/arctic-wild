@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+header {
+  height: 500px;
+  width: 100%;
+  background-image: url("../img/hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 16px 25px;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+nav .brand img:nth-child(1) {
+  height: 40px;
+  width: 40px;
+}
+nav .brand img:nth-child(2) {
+  height: 40px;
+  width: 140px;
+}
+nav .nav-bar .hamburger {
+  margin-top: 5px;
+  height: 20px;
+  width: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+nav .nav-bar .hamburger span {
+  display: block;
+  height: 2px;
+  width: 30px;
+  background-color: white;
+}
+
+.hero-text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-basis: auto;
+  align-content: center;
+  color: white;
+  font-family: "Fjalla One", sans-serif;
+}
+.hero-text > img:first-child {
+  width: 80px;
+  align-self: center;
+}
+.hero-text h2 {
+  align-self: center;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 4px;
+}
+.hero-text .wordmark {
+  display: flex;
+  flex-wrap: wrap;
+  align-self: center;
+  justify-content: center;
+  padding-top: 10px;
+}
+.hero-text .wordmark img {
+  height: 35px;
+}
+.hero-text .play-btn {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-text .play-btn img {
+  margin-left: 15px;
+  height: 40px;
+  width: 33.3px;
+}
+
+/*# sourceMappingURL=main.css.map */
