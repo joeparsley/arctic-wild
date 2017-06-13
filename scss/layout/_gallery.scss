@@ -50,33 +50,43 @@
   bottom: 45px;
 }
 .gallery {
-  // @include size(100% );
+  @include grid-container();
   overflow-y: auto;
   background-color: $gallery-bg-color;
   padding: 5vw;
-  .picture-1 {
+  > div {
     @extend %mobile-gallery-image;
+  }
+  .picture-1 {
     background-image: url("../img/home-raft.jpg");
   }
   .picture-2 {
-    @extend %mobile-gallery-image;
     background-image: url("../img/home-basecamp.jpg");
   }
   .picture-3 {
-    @extend %mobile-gallery-image;
     background-image: url("../img/home-backpacking.jpg");
   }
   .picture-4 {
-    @extend %mobile-gallery-image;
     background-image: url("../img/home-canoe.jpg");
   }
   .picture-5 {
-    @extend %mobile-gallery-image;
     background-image: url("../img/home-photo.jpg");
   }
   .picture-6 {
-    @extend %mobile-gallery-image;
     background-image: url("../img/home-custom.jpg");
     margin-bottom: 0;
   }
+
+  @include tablet-bp {
+    padding: 0;
+
+    > div {
+      @include grid-column(2, $custom-grid);
+      margin-bottom: 0;
+      &:nth-of-type(1), &:nth-of-type(6) {
+        @include grid-column(4, $custom-grid);
+      }
+    }
+  }
+
 }

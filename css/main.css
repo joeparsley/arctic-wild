@@ -25,7 +25,7 @@ header {
   padding: 35px 25px;
 }
 
-.gallery .picture-1, .gallery .picture-2, .gallery .picture-3, .gallery .picture-4, .gallery .picture-5, .gallery .picture-6 {
+.gallery > div {
   display: flex;
   justify-content: center;
   position: relative;
@@ -36,7 +36,7 @@ header {
   background-repeat: no-repeat;
   margin-bottom: 5vw;
 }
-.gallery .picture-1 .trip-icon, .gallery .picture-2 .trip-icon, .gallery .picture-3 .trip-icon, .gallery .picture-4 .trip-icon, .gallery .picture-5 .trip-icon, .gallery .picture-6 .trip-icon {
+.gallery > div .trip-icon {
   width: 60px;
   height: 60px;
   border-radius: 50%;
@@ -45,22 +45,22 @@ header {
   display: flex;
   justify-content: center;
 }
-.gallery .picture-1 .trip-icon img, .gallery .picture-2 .trip-icon img, .gallery .picture-3 .trip-icon img, .gallery .picture-4 .trip-icon img, .gallery .picture-5 .trip-icon img, .gallery .picture-6 .trip-icon img {
+.gallery > div .trip-icon img {
   height: 30px;
   align-self: center;
 }
-.gallery .picture-1 .text-separator, .gallery .picture-2 .text-separator, .gallery .picture-3 .text-separator, .gallery .picture-4 .text-separator, .gallery .picture-5 .text-separator, .gallery .picture-6 .text-separator {
+.gallery > div .text-separator {
   margin-bottom: 15px;
   display: flex;
   align-items: flex-start;
 }
-.gallery .picture-1 .text-separator span, .gallery .picture-2 .text-separator span, .gallery .picture-3 .text-separator span, .gallery .picture-4 .text-separator span, .gallery .picture-5 .text-separator span, .gallery .picture-6 .text-separator span {
+.gallery > div .text-separator span {
   display: inline-block;
   width: 40px;
   height: 5px;
   background-color: #DC7725;
 }
-.gallery .picture-1 h2, .gallery .picture-2 h2, .gallery .picture-3 h2, .gallery .picture-4 h2, .gallery .picture-5 h2, .gallery .picture-6 h2 {
+.gallery > div h2 {
   font-size: 21px;
   color: white;
   text-shadow: 0 0 1px black;
@@ -78,6 +78,11 @@ header {
   overflow-y: auto;
   background-color: #D1D1C9;
   padding: 5vw;
+}
+.gallery::after {
+  clear: both;
+  content: "";
+  display: block;
 }
 .gallery .picture-1 {
   background-image: url("../img/home-raft.jpg");
@@ -97,6 +102,22 @@ header {
 .gallery .picture-6 {
   background-image: url("../img/home-custom.jpg");
   margin-bottom: 0;
+}
+@media screen and (min-width: 768px) {
+  .gallery {
+    padding: 0;
+  }
+  .gallery > div {
+    width: calc(50%);
+    float: left;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+  .gallery > div:nth-of-type(1), .gallery > div:nth-of-type(6) {
+    width: calc(100%);
+    float: left;
+    margin-left: 0;
+  }
 }
 
 nav {
