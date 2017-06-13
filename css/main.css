@@ -183,6 +183,11 @@ nav .nav-bar .hamburger span {
   line-height: 20px;
   letter-spacing: 4px;
 }
+@media screen and (min-width: 768px) {
+  .hero-text h2 {
+    font-size: 16px;
+  }
+}
 .hero-text .wordmark {
   display: flex;
   flex-wrap: wrap;
@@ -192,6 +197,11 @@ nav .nav-bar .hamburger span {
 }
 .hero-text .wordmark img {
   height: 35px;
+}
+@media screen and (min-width: 768px) {
+  .hero-text .wordmark img {
+    height: 52px;
+  }
 }
 .hero-text .divider {
   margin-top: 10px;

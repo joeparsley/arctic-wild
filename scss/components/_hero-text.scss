@@ -19,6 +19,13 @@
     font-size: 12px;
     line-height: 20px;
     letter-spacing: 4px;
+
+    }
+  @include tablet-bp {
+    h2 {
+      font-size: 16px;
+    }
+
   }
 
   .wordmark {
@@ -31,6 +38,13 @@
     img {
       height: 35px;
     }
+    @include tablet-bp {
+      img {
+        height: 52px;
+      }
+
+    }
+
   }
 
   .divider{
