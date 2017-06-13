@@ -89,4 +89,14 @@
     }
   }
 
+  @include desktop-bp {
+    > div {
+      @include grid-column(1, $custom-grid);
+      margin-bottom: 0;
+      &:nth-of-type(1), &:nth-of-type(6) {
+        @include grid-column(2, $custom-grid);
+      }
+    }
+  };
+
 }
