@@ -22,7 +22,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding: 16px 25px;
+  padding: 35px 25px;
 }
 
 nav {
@@ -62,6 +62,7 @@ nav .nav-bar .hamburger span {
   align-content: center;
   color: white;
   font-family: "Fjalla One", sans-serif;
+  margin-top: 45px;
 }
 .hero-text > img:first-child {
   width: 80px;
@@ -84,11 +85,27 @@ nav .nav-bar .hamburger span {
 .hero-text .wordmark img {
   height: 35px;
 }
+.hero-text .divider {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  height: 50px;
+  width: 250px;
+}
+.hero-text .divider span {
+  display: inline-block;
+  height: 5px;
+  width: 100%;
+  background-color: white;
+}
 .hero-text .play-btn {
+  align-self: center;
   height: 100px;
   width: 100px;
   border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.4);
   display: flex;
   justify-content: center;
   align-items: center;

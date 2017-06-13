@@ -6,48 +6,60 @@
   align-content: center;
   color: white;
   font-family: $second-title;
+  margin-top: 45px;
+
   > img:first-child {
     width: 80px;
     align-self: center;
   }
+
   h2 {
-    // text-align: center;
     align-self: center;
     text-transform: uppercase;
     font-size: 12px;
     line-height: 20px;
     letter-spacing: 4px;
   }
+
   .wordmark {
     display: flex;
     flex-wrap: wrap;
     align-self: center;
     justify-content: center;
     padding-top: 10px;
+
     img {
       height: 35px;
     }
   }
 
   .divider{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    @include size(250px 50px);
 
+    span {
+      display: inline-block;
+      @include size(100% 5px);
+      background-color: white;
+    }
   }
 
-
   .play-btn {
-    // border: 2px solid red;
+    align-self: center;
     @include size(100px 100px);
     border-radius: 50%;
-    background-color: rgba(256, 256, 256, 0.5);
+    background-color: rgba(256, 256, 256, 0.4);
     display: flex;
     justify-content: center;
     align-items: center;
-
 
     img {
       margin-left: 15px;
       @include size(33.3px 40px);
     }
-
   }
 }
